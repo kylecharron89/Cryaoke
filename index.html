@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRYAOKE</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div id="app">
+    <div class="banner">
+      <h1>CRYAOKE</h1>
+      <p class="tagline">The emo/screamo MySpace singalong</p>
+    </div>
+    <div id="lyrics-container" ondrop="dropFile(event)" ondragover="event.preventDefault()">
+      <input type="file" id="file-input" accept=".txt" hidden onchange="handleFile(this.files[0])">
+      <button onclick="document.getElementById('file-input').click()">Load Lyrics</button>
+      <p class="hint">or drag and drop a .txt file anywhere below</p>
+      <div id="lyrics" class="lyrics-box">Your lyrics will appear here...</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

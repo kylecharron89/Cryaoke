@@ -1,0 +1,40 @@
+body {
+  font-family: 'Courier New', monospace;
+  background: black;
+  color: lime;
+  text-align: center;
+  padding: 20px;
+}
+.banner h1 {
+  font-size: 3em;
+  margin: 0;
+}
+.tagline {
+  color: hotpink;
+  margin-bottom: 30px;
+}
+button {
+  padding: 10px 20px;
+  background: hotpink;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hint {
+  font-size: 0.9em;
+  color: grey;
+  margin: 10px 0;
+}
+.lyrics-box {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px dashed lime;
+  min-height: 200px;
+  white-space: pre-wrap;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #111;
+}
